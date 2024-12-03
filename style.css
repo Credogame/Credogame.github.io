@@ -53,7 +53,7 @@ p {
 .instagram { background: rgba(225, 48, 108, 0.8); }
 .twitter { background: rgba(29, 161, 242, 0.8); }
 .github { background: rgba(51, 51, 51, 0.8); }
-.itch { background: rgba(34, 19, 2c, 0.8); }
+.itch { background: rgba(34, 19, 44, 0.8); }
 
 .link:hover {
     opacity: 0.9;
