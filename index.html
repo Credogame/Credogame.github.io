@@ -1,24 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Credo | Все ссылки</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Credo — Crossworld</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Credo — инди-студия, создающая Crossworld: коллекцию интерактивных историй, где решения меняют финал."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/background-stars.css">
+  <link rel="stylesheet" href="css/card.css">
+  <link rel="stylesheet" href="css/poster.css">
+  <link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Credo</h1>
-        <p>Игровая инди-студия</p>
-        
-        <div class="links">
-            <a href="https://t.me/gamesareacredo" class="link telegram">Telegram</a>
-            <a href="https://vk.com/credoindiegame" class="link instagram">VK</a>
-            <a href="https://discord.gg/mqxVw9XGm2" class="link twitter">Discord</a>
-            <a href="https://boosty.to/credo_game" class="link github">Boosty</a>
-            <a href="https://food-king.itch.io/crossworld" class="link itch">Itch(Онлайн и Android версия Crossworld)</a>
+
+  <main class="page">
+    <div class="layout">
+
+      <!-- Левая колонка -->
+      <section class="card card-links" aria-label="Credo — ссылки и контакты">
+        <header class="card-header">
+          <div class="logo-pill">
+            <span class="logo-dot"></span>
+            <span>Игровая инди-студия</span>
+          </div>
+
+          <h1 class="title">Credo</h1>
+          <p class="subtitle">делаем Crossworld — интерактивные истории</p>
+        </header>
+
+        <div class="cta-column">
+          <!-- Замени href на реальные ссылки -->
+          <a class="btn btn-primary" href="https://your-itch-link.example" target="_blank" rel="noopener noreferrer">
+            Играть в Crossworld
+          </a>
+
+          <a class="btn btn-secondary" href="https://your-discord-link.example" target="_blank" rel="noopener noreferrer">
+            Вступить в Discord
+          </a>
+
+          <a class="btn btn-outline" href="https://your-boosty-link.example" target="_blank" rel="noopener noreferrer">
+            Поддержать студию
+          </a>
         </div>
+
+        <div class="links-section">
+          <p class="links-title">Соцсети и площадки</p>
+
+          <div class="links-grid">
+            <a class="pill-link" href="https://t.me/your_telegram" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <a class="pill-link" href="https://vk.com/your_vk" target="_blank" rel="noopener noreferrer">VK</a>
+            <a class="pill-link" href="https://discord.gg/your_discord" target="_blank" rel="noopener noreferrer">Discord</a>
+            <a class="pill-link" href="https://boosty.to/your_boosty" target="_blank" rel="noopener noreferrer">Boosty</a>
+            <a class="pill-link" href="https://your-itch-link.example" target="_blank" rel="noopener noreferrer">Itch.io</a>
+          </div>
+        </div>
+
+        <footer class="card-footer">
+          <span>© Credo, 2026</span>
+          <span>Контакты: <a href="mailto:hello@credo.games">hello@credo.games</a></span>
+        </footer>
+      </section>
+
+      <!-- Правая колонка -->
+      <section class="poster-block" aria-label="Crossworld — постер и описание">
+        <article class="poster-card">
+          <!-- Замени src на свой постер -->
+          <img
+            src="images/crossworld-poster.jpg"
+            alt="Постер игры Crossworld"
+            class="poster-image"
+          />
+
+          <div class="poster-tag">
+            <span class="tag-pill">Crossworld</span>
+            <span class="tag-sub">Коллекция интерактивных историй</span>
+          </div>
+        </article>
+
+        <div class="poster-description">
+          <h2>Crossworld</h2>
+          <p>
+            Сборник связанных между собой интерактивных историй. Каждый эпизод
+            играется отдельно, но решения откликаются в общем мире.
+          </p>
+          <p class="poster-extra">
+            Мистика, научная фантастика, драма, детектив — и несколько концовок,
+            к которым можно возвращаться через ключевые развилки.
+          </p>
+        </div>
+      </section>
+
     </div>
+  </main>
+
 </body>
 </html>
