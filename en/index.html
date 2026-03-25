@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Credo — Crossworld</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Credo is an indie game studio creating Crossworld — a collection of interactive stories where your choices shape the outcome."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/background-stars.css">
+  <link rel="stylesheet" href="../css/card.css">
+  <link rel="stylesheet" href="../css/poster.css">
+  <link rel="stylesheet" href="../css/layout.css">
+</head>
+<body>
+  <main class="page">
+    <div class="layout">
+
+      <!-- Left column -->
+      <section class="card card-links" aria-label="Credo — links and contacts">
+        <div class="lang-switch" aria-label="Language switch">
+          <a class="lang-link" href="../" onclick="localStorage.setItem('site-lang','ru')">RU</a>
+          <span class="lang-divider">|</span>
+          <a class="lang-link is-active" href="./" onclick="localStorage.setItem('site-lang','en')">EN</a>
+        </div>
+
+        <header class="card-header">
+          <div class="logo-pill">
+            <span class="logo-dot"></span>
+            <span>Indie game studio</span>
+          </div>
+
+          <h1 class="title">Credo</h1>
+          <p class="subtitle">creating Crossworld — interactive stories</p>
+        </header>
+
+        <div class="cta-column">
+          <a class="btn btn-primary" href="https://your-itch-link.example" target="_blank" rel="noopener noreferrer">
+            Play Crossworld
+          </a>
+
+          <a class="btn btn-outline" href="https://your-kofi-or-patreon-link.example" target="_blank" rel="noopener noreferrer">
+            Support the Studio
+          </a>
+        </div>
+
+        <div class="links-section">
+          <p class="links-title">Where to find us</p>
+
+          <div class="links-grid">
+            <a class="pill-link" href="https://your-itch-link.example" target="_blank" rel="noopener noreferrer">Itch.io</a>
+            <a class="pill-link" href="https://bsky.app/profile/yourprofile" target="_blank" rel="noopener noreferrer">Bluesky</a>
+            <a class="pill-link" href="https://www.youtube.com/@yourchannel" target="_blank" rel="noopener noreferrer">YouTube</a>
+            <a class="pill-link" href="mailto:credocrossworld@gmail.com">Email</a>
+          </div>
+        </div>
+
+        <footer class="card-footer">
+          <span>© Credo, 2026</span>
+          <span>Contact: <a href="mailto:credocrossworld@gmail.com">credocrossworld@gmail.com</a></span>
+        </footer>
+      </section>
+
+      <!-- Right column -->
+      <section class="poster-block" aria-label="Crossworld — poster and description">
+        <article class="poster-card">
+          <img
+            src="../images/crossworld-poster.jpg"
+            alt="Crossworld game poster"
+            class="poster-image"
+          />
+
+          <div class="poster-tag">
+            <span class="tag-pill">Crossworld</span>
+            <span class="tag-sub">A collection of interactive stories</span>
+          </div>
+        </article>
+
+        <div class="poster-description">
+          <h2>Crossworld</h2>
+          <p>
+            A collection of interconnected interactive stories. Each episode can
+            be played on its own, but your choices still echo across the shared world.
+          </p>
+          <p class="poster-extra">
+            Mystery, science fiction, drama, detective stories — and multiple endings
+            you can revisit through key branching moments.
+          </p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+</body>
+</html>

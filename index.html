@@ -21,6 +21,20 @@
   <link rel="stylesheet" href="css/card.css">
   <link rel="stylesheet" href="css/poster.css">
   <link rel="stylesheet" href="css/layout.css">
+
+  <script>
+    (function () {
+      const savedLang = localStorage.getItem("site-lang");
+      if (savedLang) return;
+
+      const lang = (navigator.language || navigator.userLanguage || "").toLowerCase();
+      const isRussian = lang.startsWith("ru");
+
+      if (!isRussian) {
+        window.location.replace("en/");
+      }
+    })();
+  </script>
 </head>
 <body>
 
@@ -29,6 +43,12 @@
 
       <!-- Левая колонка -->
       <section class="card card-links" aria-label="Credo — ссылки и контакты">
+        <div class="lang-switch" aria-label="Переключение языка">
+          <a class="lang-link is-active" href="/" onclick="localStorage.setItem('site-lang','ru')">RU</a>
+          <span class="lang-divider">|</span>
+          <a class="lang-link" href="en/" onclick="localStorage.setItem('site-lang','en')">EN</a>
+        </div>
+        
         <header class="card-header">
           <div class="logo-pill">
             <span class="logo-dot"></span>
